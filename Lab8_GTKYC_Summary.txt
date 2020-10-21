@@ -1,0 +1,6 @@
+Attempting to assign an array to other will have the new array simply refer to the old array.
+As a result, any changes made in the original array will carry over and be reflected in the new array.
+To avoid this issue, you can use the array method CopyTo to have the new array take copies of the old array's values, and then interact with those values without running any risks of having changes reflected in each other.
+
+Attempting to print an array into the console will just have the console print out the array's object type. For example, print to print a string array with result in the console printing "System.String[]".
+To avoid this issue, you can use a For Each loop to iterate and print every individual value in the array into the console. You could even use a standard For Loop, provided that you keep track of the array's Length property for counting how many elements are in it.
